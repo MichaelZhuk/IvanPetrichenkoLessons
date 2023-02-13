@@ -263,3 +263,34 @@ function fackt2(n){
 fackt2(5);
 
 console.log(s);
+
+
+
+ // ! ЗАМЫКАНИЕ
+ 
+const  zamKanie = (argumentOne) => {
+  const  zamKanieInside = (argumentTwo) => {
+      console.log(argumentOne + argumentTwo);
+  };
+  return zamKanieInside;
+};
+
+const argumentZamkanie = zamKanie('Привет! ');
+
+argumentZamkanie('мальчик');
+
+
+
+
+const  randomIntege = (min, max) =>{
+  let rand = min + Math.random() *(max + 1 - min);
+  Math.floor(rand);
+  const chanheRandomInside = (argumentInside) => {
+    console.log( argumentInside * rand);
+  };
+  return chanheRandomInside;
+};
+
+const zamukanieBoy = randomIntege(0,100);
+
+zamukanieBoy(10);
