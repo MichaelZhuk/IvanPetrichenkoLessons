@@ -239,3 +239,27 @@ function moneyRecursion(){
 }
 
 moneyRecursion();
+
+
+// FACTORIAL
+
+function factorial(n){
+    let s = 1;
+    for (let i = 1; i <= n; i++){
+        s = s * i;
+    }
+    console.log(s);
+}
+
+factorial(5);
+
+let s = 1;
+function fackt2(n){
+  if(n === 0) return;
+  s = s * n;
+  fackt2(n - 1);
+}
+
+fackt2(5);
+
+console.log(s);
